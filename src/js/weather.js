@@ -8,7 +8,7 @@ function success(pos){
     var crd = pos.coords;
     console.log("Lat:" + crd.latitude);
     console.log("Lng:" + crd.longitude);
-    const url = `/netlify/functions/weatherapi?lat=${crd.latitude}&lon=${crd.longitude}`;
+    const url = `/.netlify/functions/weatherapi?lat=${crd.latitude}&lon=${crd.longitude}`;
     fetch(url).then(response=>{
         return response.json();
     }).then(data=>{
