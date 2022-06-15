@@ -5,6 +5,13 @@ layout: base.njk
 
   <div class="container">
     <h1>This is about you</h1>
+     <ul>
+        {% for nobj in news %}
+        <li>
+            <a href="/{{nobj.country}}/">{{nobj.country}}</a>
+        </li>
+        {% endfor %}
+    </ul>
     <p>
       It wa smade from blabla
     </p>
